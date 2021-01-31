@@ -38,11 +38,11 @@ img {
 }
 
 .visually-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .btn {
@@ -53,7 +53,7 @@ body {
   margin: 0;
   padding: 0;
   min-width: 1200px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -68,6 +68,8 @@ body {
 
 .site-nav {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-nav-item a {
@@ -96,8 +98,11 @@ body {
   line-height: 26px;
 }
 
-.features-list {
+.features-list,
+.features-card-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .features-item {
@@ -115,10 +120,6 @@ body {
   font-weight: 700;
 }
 
-.features-card-list {
-  list-style: none;
-}
-
 .features-card-item {
   background-color: var(--color-white);
   color: var(--color-black);
@@ -126,9 +127,8 @@ body {
 
 .features-card-heading {
   font-size: 21px;
-  font-weight: 21px;
+  font-weight: 700;
 }
-
 
 .hotel-search-bold {
   font-size: 30px;
@@ -155,7 +155,6 @@ body {
 .hotel-search-heading:active {
   background-color: var(--color-brownish-grey);
   color: rgba(255,255,255, .3);
-
 }
 
 .hotel-search-form label,
@@ -169,7 +168,7 @@ body {
 }
 
 .hotel-search-form input:hover {
-  background-color: #EBEBEB;
+  background-color: var(--color-linen);
 }
 
 .hotel-search-form input:focus {
@@ -197,21 +196,24 @@ body {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  color: black;
+  color: var(--color-black);
 }
 
-.social-list {
+.social-list,
+.sort-by-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .hotels-filters-form {
   background-color: var(--color-light-blue);
 }
 
-.hotels-filters-form legend {
+.hotels-filters-form .hotels-filter-subtitle {
   font-size: 16px;
   font-weight: 700;
-  color: white;
+  color: var(--color-white);
 }
 
 .search-results-heading {
@@ -223,10 +225,6 @@ body {
 .sort-by-filter {
   font-size: 12px;
   line-height: 18px;
-}
-
-.sort-by-list {
-  list-style: none;
 }
 
 .sort-by-btn {
@@ -245,22 +243,16 @@ body {
   border: none;
 }
 
-.hotels-filter ul {
+.hotels-filters-form .hotels-filter-list,
+.hotels-card-list {
   list-style: none;
-}
-
-.hotels-filter legend {
-  font-size: 16px;
-  font-weight: 700;
+  margin: 0;
+  padding: 0;
 }
 
 .hotels-filter .btn {
   text-transform: uppercase;
   background: transparent;
-}
-
-.hotels-card-list {
-  list-style: none;
 }
 
 .hotels-card-heading {
