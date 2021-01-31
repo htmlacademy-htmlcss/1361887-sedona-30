@@ -1,0 +1,281 @@
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-light-blue: #81B3D2;
+  --color-dark-blue: #669EC0;
+  --color-deep-blue:  #5496BD;
+  --color-brown: #766357;
+  --color-gray-brown: #604E43;
+  --color-brownish-grey: #503E33;
+  --color-gray: #F2F2F2;
+  --color-light-gray: #eeeeee;
+  --color-linen: #EBEBEB;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/PTSans.woff2") format("woff2"),
+       url("../fonts/PTSans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/PTSans-Bold.woff2") format("woff2"),
+       url("../fonts/PTSans-Bold.woff") format("woff");
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.btn {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1200px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: var(--color-black);
+  text-transform: uppercase;
+}
+
+.main-nav {
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.site-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav-item a {
+  color: var(--color-black);
+}
+
+.site-nav-item a:hover {
+  color: var(--color-light-blue);
+}
+
+.site-nav-item a:active {
+  color:rgba(0,0,0, .3);
+}
+
+.intro {
+  background-color: var(--color-linen);
+}
+
+.intro-heading {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.intro-desc {
+  line-height: 26px;
+}
+
+.features-list,
+.features-card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features-item {
+  background-color: var(--color-light-blue);
+  color: var(--color-white);
+}
+
+.features-item:nth-child(n+3) {
+  background-color: var(--color-light-gray);
+  color: var(--color-black);
+}
+
+.features-item-heading {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.features-card-item {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.features-card-heading {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.hotel-search-bold {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.hotel-search-info {
+  line-height: 24px;
+}
+
+.hotel-search-heading {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: var(--color-brown);
+  color: var(--color-white);
+}
+
+.hotel-search-heading:hover {
+  background-color: var(--color-gray-brown);
+}
+
+.hotel-search-heading:active {
+  background-color: var(--color-brownish-grey);
+  color: rgba(255,255,255, .3);
+}
+
+.hotel-search-form label,
+.hotel-search-form input {
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.hotel-search-form input {
+  background-color: var(--color-gray);
+}
+
+.hotel-search-form input:hover {
+  background-color: var(--color-linen);
+}
+
+.hotel-search-form input:focus {
+  background-color: var(--color-white);
+}
+
+.hotel-search-btn {
+  color: var(--color-white);
+  font-size: 21px;
+  font-weight: 700;
+  background-color: var(--color-light-blue);
+  text-transform: uppercase;
+}
+
+.hotel-search-btn:hover {
+  background-color: var(--color-dark-blue);
+}
+
+.hotel-search-btn:focus {
+  background-color: var(--color-deep-blue);
+}
+
+.footer-hashtag,
+.footer-adress {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  color: var(--color-black);
+}
+
+.social-list,
+.sort-by-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hotels-filters-form {
+  background-color: var(--color-light-blue);
+}
+
+.hotels-filters-form .hotels-filter-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.search-results-heading {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.sort-by-filter {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-by-btn {
+  color: var(--color-black);
+  opacity: .3;
+}
+
+.sort-by-btn:hover {
+  color: var(--color-light-blue);
+  border-bottom: 1px dashed  var(--color-light-blue);
+}
+
+.sort-by-btn:active {
+  color: var(--color-black);
+  opacity: 1;
+  border: none;
+}
+
+.hotels-filters-form .hotels-filter-list,
+.hotels-card-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hotels-filter .btn {
+  text-transform: uppercase;
+  background: transparent;
+}
+
+.hotels-card-heading {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.hotels-card-buttons {
+  font-weight: 700;
+}
+
+.hotels-card-details {
+  background-color: var(--color-light-blue);
+}
+
+.hotels-card-booking {
+  font-weight: 700;
+  background-color: var(--color-brown);
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+.hotels-rating-text {
+  background-color: var(--color-gray);
+}
