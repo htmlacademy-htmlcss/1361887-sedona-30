@@ -79,7 +79,7 @@ img {
 }
 
 .site-navigation-wrapper {
-  width: 1054px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -119,7 +119,7 @@ img {
 
 .intro {
   height: 509px;
-  background: url(/img/intro-welcome.png) no-repeat 50% 50%, url(/img/intro-background.jpg) no-repeat 50% 50%;
+  background: url(../img/intro-welcome.png) no-repeat 50% 50%, url(../img/intro-background.jpg) no-repeat 50% 50%;
 }
 
 .features-intro-heading,
@@ -161,7 +161,7 @@ img {
 .features-bg-first {
   grid-column: 2 / 4;
   grid-row: 1 / 2;
-  background: url(/img/features-background-1.jpg)
+  background: url(../img/features-background-1.jpg);
 }
 
 .features-inner-list {
@@ -181,7 +181,7 @@ img {
 
 .features-bg-second {
   grid-column: 1 / 3;
-  background: url(/img/features-background-2.jpg);
+  background: url(../img/features-background-2.jpg);
 }
 
 .features-item,
@@ -258,10 +258,10 @@ img {
   background-color: var(--color-white);
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .hotel-search-btn {
@@ -344,10 +344,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .hotels-filters {
   background-color: var(--color-light-blue);
+  background: url(../img/catalog-background.jpg) 50% 50% no-repeat;
 }
 
 .hotels-filters-form {
   color: var(--color-white);
+
 }
 
 .hotels-filters-group {
