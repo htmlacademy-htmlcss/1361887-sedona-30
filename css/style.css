@@ -113,8 +113,7 @@ img {
 
 .container {
   margin: 0 auto;
-  padding: 0 10px;
-  width: 1220px;
+  width: 1200px;
 }
 
 .intro {
@@ -342,6 +341,17 @@ input[type=number]::-webkit-outer-spin-button {
   fill: var(--color-pale-gray);
 }
 
+.hotels-filters-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: 217px;
+}
+
+.hotels-filters-col-1 {
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+
 .hotels-filters {
   background-color: var(--color-light-blue);
   background: url(../img/catalog-background.jpg) 50% 50% no-repeat;
@@ -349,11 +359,15 @@ input[type=number]::-webkit-outer-spin-button {
 
 .hotels-filters-form {
   color: var(--color-white);
-
 }
 
 .hotels-filters-group {
   border: none;
+}
+
+.wrapper {
+  width: 1056px;
+  margin: 0 auto;
 }
 
 .hotels-filters-subtitle {
@@ -362,8 +376,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .hotels-filters-list,
-.sort-by-list,
-.hotels-cards-list {
+.sort-by-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -410,40 +423,57 @@ input[type=number]::-webkit-outer-spin-button {
   border: none;
 }
 
-.hotels-cards-heading {
+.hotels-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-rows: 150px 150px 150px;
+}
+
+.hotels-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.hotels-col-1 {
+  margin-right: 30px;
+}
+
+.hotels-heading {
   color: var(--color-black);
 }
 
-.hotels-cards-heading:hover {
+.hotels-heading:hover {
   color: var(--color-light-blue);
 }
 
-.hotels-cards-heading:active {
+.hotels-heading:active {
   color: var(--color-black-transparent);
 }
 
-.hotels-cards-details {
+.hotels-details {
   background-color: var(--color-light-blue);
 }
 
-.hotels-cards-btn {
+.hotels-btn {
   font-weight: 700;
 }
 
-.hotels-cards-booking-btn {
+.hotels-booking-btn {
   background-color: var(--color-brown);
 }
 
-.hotels-cards-booking-btn:hover {
+.hotels-booking-btn:hover {
   background-color: var(--color-gray-brown);
 }
 
-.hotels-cards-booking-btn:active {
+.hotels-booking-btn:active {
   background-color: var(--color-brownish-grey);
   color: var(--color-white-transparent);
 }
 
-.hotels-cards-rating {
+.hotels-rating {
   background-color: var(--color-gray);
 }
 
