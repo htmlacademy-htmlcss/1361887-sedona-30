@@ -13,6 +13,7 @@
   --color-pale-gray: #BDBBBC;
   --color-light-gray: #eeeeee;
   --color-medium-gray: #e5e5e5;
+  --color-aluminum: #ababab;
   --color-linen: #ebebeb;
 }
 
@@ -657,8 +658,8 @@ input[type=number]::-webkit-outer-spin-button {
   top: 0;
   width: 19px;
   height: 19px;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--color-white);
+  background-color: var(--color-aluminum);
   border-radius: 50%;
   box-shadow:  0px 2px 0px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
@@ -697,7 +698,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .sort {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--color-medium-gray);
 }
 
 .sort .container {
@@ -782,7 +783,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .hotels-item {
   padding: 25px 0 28px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid var(--color-medium-gray);
 }
 
 .hotels-img {
